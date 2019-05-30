@@ -122,6 +122,7 @@
 * Fix a potential crash during code generated from XAML, content were not properly escaped.
 * #977 Fix exception when setting MediaPlayerElement.Stretch in XAML.
 * [Android] Fix MediaPlayerElement.Stretch not applied
+* 153974 [Android] fixed flyout placement
 
 ## Release 1.44.0
 

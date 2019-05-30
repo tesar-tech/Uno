@@ -88,7 +88,8 @@ namespace Windows.UI.Xaml.Controls
 			}
 
 			var visibleBounds = ApplicationView.GetForCurrentView().VisibleBounds;
-			var anchorRect = anchor.GetAbsoluteBoundsRect();
+			var anchorTransform = (MatrixTransform)anchor.TransformToVisual(this);
+			var anchorRect = new Rect(anchorTransform.Matrix.OffsetX, anchorTransform.Matrix.OffsetY, anchor.ActualWidth, anchor.ActualHeight);
 
 			// Make sure the desiredSize fits in visibleBounds
 			if (desiredSize.Width > visibleBounds.Width)
