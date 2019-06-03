@@ -209,6 +209,11 @@ namespace Windows.UI.Xaml.Controls
 				{
 					popupChild.SizeChanged += PopupChildChanged;
 				}
+
+				if (SelectedItem != null)
+				{
+					ScrollIntoView(SelectedItem);
+				}
 			}
 			else
 			{
