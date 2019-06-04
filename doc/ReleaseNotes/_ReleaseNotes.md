@@ -126,6 +126,7 @@
 * Fix a potential crash during code generated from XAML, content were not properly escaped.
 * #977 Fix exception when setting MediaPlayerElement.Stretch in XAML.
 * [Android] Fix MediaPlayerElement.Stretch not applied
+* `Click` on `ButtonBase` was not properly raised.
 
 ## Release 1.44.0
 
