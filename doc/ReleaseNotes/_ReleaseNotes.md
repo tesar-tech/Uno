@@ -72,6 +72,7 @@
     - Import of MenuBar code, not functional yet as MenuItemFlyout (Issue #801)
     - Basic support for macOS native system menus
 * Fix Grid.ColumnDefinitions.Clear exception (#1006)
+* Ensure FrameworkElement.LayoutUpdated is invoked on all elements being arranged
 
 ### Breaking Changes
 * The `WebAssemblyRuntime.InvokeJSUnmarshalled` method with three parameters has been removed.
